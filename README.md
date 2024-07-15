@@ -64,21 +64,26 @@
 # END POINTS / DOCUMENTATION
 
 1. GET METHOD :
-		1. /get-rooms --> To collect all rooms details
-		2. /all-booked-rooms --> To collect the all booked rooms details
-		3. /all-customers --> To collect all customers details
-		4. /booking-customer-data --> To get particular customer data (required customer_name from Query Params)
+   1. /get-rooms --> To collect all rooms details
+   2. /all-booked-rooms --> To collect the all booked rooms details
+   3. /all-customers --> To collect all customers details
+   4. /booking-customer-data --> To get particular customer data (required customer_name from Query Params)
 
-	2. POST METHOD :
-		1. /add-room --> To add more rooms. 
-			* Data required in Query Params - room_name, seates_available, aminities, price. (all data required from user)
-				Conditions :
-					i) Should not add same room name again.
-
-		2. /book-room --> To book room. [CONDITIONS : Should not book the already booked room for that time period]
-			* Data required in Query Params - room_name, customer_name, date, start_time, end_time. (all data required from user)
-				Conditions :
-					i) date format should be Ex. 2024-12-24
-					ii) start_time & end_time format should be in 24-hrs Ex. start_time = 12:00 & end_time = 14:00 
-
-
+2. POST METHOD :
+   1. /add-room --> To add more rooms.
+     	<ul>
+		<li>Data required in Query Params - room_name, seates_available, aminities, price. (all data required from user)</li>
+		<li>Conditions :</li>
+		<ul>
+			<li>Should not add same room name again.</li>
+		</ul>
+	</ul>      
+   2. /book-room --> To book room. [CONDITIONS : Should not book the already booked room for that time period]
+	<ul>
+		<li>Data required in Query Params - room_name, customer_name, date, start_time, end_time. (all data required from user)</li>
+		<li>Conditions :</li>
+		<ul>
+			<li>date format should be Ex. 2024-12-24</li>
+			<li>start_time & end_time format should be in 24-hrs Ex. start_time = 12:00 & end_time = 14:00 </li>
+		</ul>
+	</ul>
